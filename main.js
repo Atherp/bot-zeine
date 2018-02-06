@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 
-bot.login('NDEwMTE2ODk0NjY2OTE1ODQw.DVoepw.sHp1sa5E1H1fYDTghBuly3BPNJs');
+bot.login(process.env.TOKEN);
 
 bot.on('guildMemberAdd', member => {
     let role = member.guild.roles.find('name', '► Abos');
